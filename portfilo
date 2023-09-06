@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Labrada:wght@100&family=Noto+Sans+Cherokee:wght@100&family=Open+Sans:wght@300&family=Poppins:wght@400;600;700&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/1e540309d0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ravi Portfilo</div>
+            <div class="right"></div>
+            <ul>
+                <li class="active">Home</li>
+                <li>About Me</li>
+                <li>Project</li>
+                <li>Contact Me</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hii I'm Ravi Singh
+
+            </div>
+
+            <div class="rightsection">
+                <div>A Computer Science Student and an enthusiastic Java Coder and Wed Developer. I write codes to
+                    Enhance My Problem</div>
+            </div>
+        </section>
+    </main>
+    <!--about-->
+    <div id="About Me ">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Snapchat-797583931.jpg" alt="The">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        My name is Ravi Singh and I'm a Computer Science Engineering Student at IAIT Group of Institute
+                        of Technology Currently it's my 3rd year of Btech </p>
+                    <p>As a Software Engineering student I always
+                        took int1erst in the field of Coding but I have also explored a lot of things in past two years
+                        and finally I realised that the domain I'm really intersted in is Problem solving and Website
+                        Desining </p>
+                    <p>So Currently Focus on My Problem</p>.
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab ('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Project')">Project</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span><br></li>
+                            <li><span>CSS</span><br></li>
+                            <li><span>C Language</span></li>
+                            <li><span>JAVA SCRIPT</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+
+                            <li><span>2017</span><br>Hardware and Software </li>
+                            <li><span>IAIT GROUP OF INSTITUTE </span><br>Bachelor of Technolgy -BTech,computerscience
+                                2022-2025</li>
+                            <li><span>Web Developer</span><br>Web app developer</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Project">
+                        <ul>
+                            <li><span>UI?UX</span><br>desining of Web/app</li>
+                            <li><span>Web Developer</span><br>Web app developer</li>
+                            <li><span>App Developer</span><br>Buidling Android vs ios apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="Sub-titles">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ravikumarsingh465@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i>8429091713</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                         <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                          <a href=""><i class="fa-brands fa-instagram"></i></a>
+                           <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+
+
+                    
+                </div>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
